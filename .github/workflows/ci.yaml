@@ -2,9 +2,14 @@ name: ci-test
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
   pull_requests:
-    branches: [main]
+    types:
+      - opened
+      - closed
+    branches:
+      - main
 
 jobs:
 
