@@ -20,7 +20,7 @@ jobs:
       postgres:
         image: postgres:15
         env:
-          POSTGRES_PASSWORD: simple_bank
+          POSTGRES_DB: simple_bank
           POSTGRES_PASSWORD: secret
           POSTGRES_USER: root
         options: >-
